@@ -1,0 +1,71 @@
+#!/bin/sh
+
+if [ "$#" = 0 ]; then
+  getopt=./getopt
+elif [ "$#" = 1 ]; then
+  getopt="$1"
+else
+  echo "Syntax: $0 [ PATH_TO_GETOPT ]" 2>&1
+  exit 2
+fi
+
+# Reset the environment
+LC_ALL="C"
+unset LANG
+unset LC_CTYPE
+unset LC_COLLATE
+unset LC_MESSAGES
+unset POSIXLY_CORRECT
+unset GETOPT_COMPATIBLE
+cd `dirname $0`
+
+for testcmd in tests/*.cmd; do
+  test_failed=0
+  rm -f test-stdout test-stderr test-stdout-expected test-stderr-expected
+
+  testfile=`basename "$testcmd" .cmd`
+
+  echo "Next test: $testfile"
+  "tests/${testfile}.cmd" "$getopt" > test-stdout 2>test-stderr
+  exitcode="$?"
+
+  if [ "$exitcode" != "`cat tests/${testfile}.exitcode`" ]; then
+    echo "TEST FAILED: expected exit code `cat tests/${testfile}.exitcode`, got $exitcode"
+    test_failed=1
+  else
+    echo "Received expected exit code"
+  fi
+
+  cat tests/${testfile}.stdout | sed "s,\$0,$getopt,g" > test-stdout-expected
+  if ! cmp -s test-stdout test-stdout-expected ; then
+    echo "TEST FAILED: unexpected stdout output, diff follows:"
+    diff test-stdout test-stdout-expected
+    test_failed=1
+  else
+    echo "Received expected stdout output"
+  fi
+
+  cat tests/${testfile}.stderr | sed "s,\$0,$getopt,g" > test-stderr-expected
+  if ! cmp -s test-stderr test-stderr-expected ; then
+    echo "TEST FAILED: unexpected stdout output, diff follows:"
+    diff test-stderr test-stderr-expected
+    test_failed=1
+  else
+    echo "Received expected stderr output"
+  fi
+  echo 
+
+  if [ "$test_failed" = 1 ]; then
+    failed_tests="$failed_tests $testfile"
+  fi
+  rm -f test-stdout test-stderr test-stdout-expected test-stderr-expected
+  echo
+done
+
+if [ -z "$failed_tests" ]; then
+  echo "ALL TESTS SUCCEEDED"
+  exit 0
+else
+  echo "SOME TESTS FAILED: $failed_tests"
+  exit 1
+fi

@@ -1,0 +1,192 @@
+# Vietnamese translation for Util-Linux.
+# Bản dịch tiếng Việt dành cho util-linux.
+# Copyright © 2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the util-linux package.
+# Phan Vinh Thinh <teppi82@gmail.com>, 2005-2007.
+# Clytie Siddall <clytie@riverland.net.au>, 2007-2010.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2012-2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux-2.25-rc3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2014-07-15 08:48+0700\n"
+"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
+"Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Hãy thử lệnh “%s --help” để xem thông tin thêm.\n"
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "tùy chọn dài rỗng sau -l hay tham số --long"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "không hiểu shell (hệ vỏ) sau -s hay tham số --shell"
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+" %1$s tham số optstring\n"
+" %1$s [các tùy chọn] [--] tham số optstring\n"
+" %1$s [các tùy chọn] -o|--options tham số optstring [các tùy chọn] [--] \n"
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr ""
+" -a, --alternative            Cho phép tùy chọn dài bắt đầu với một - đơn\n"
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr " -l, --longoptions <tùychọndài> Tùy chọn dài cần nhận ra\n"
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr " -n, --name <tên_chương_trình> Tên mà bị báo cáo lỗi\n"
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr " -o, --options <chuỗi_tùy_chọn> Các tùy chọn ngắn cần nhận ra\n"
+
+#: getopt.c:335
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr " -q, --quiet                  Tắt bỏ báo cáo lỗi bằng getopt(3)\n"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr " -Q, --quiet-output           Không có kết quả ra thông thường\n"
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr " -s, --shell <hệ_vỏ>          Đặt quy ước trích dẫn shell (hệ vỏ)\n"
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr " -T, --test                   Thử phiên bản getopt(1)\n"
+
+#: getopt.c:339
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr " -u, --unquoted               Không trích dẫn kết quả ra\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "thiếu đối số chuỗi_tùy_chọn"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "lỗi nội bộ, hãy liên hệ với tác giả."
+
+#: util-linux-compat.h:11
+msgid ""
+"\n"
+"Usage:\n"
+msgstr ""
+"\n"
+"Cách dùng:\n"
+
+#: util-linux-compat.h:12
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"Tùy chọn:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr "\n"
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr " -h, --help     hiển thị trợ giúp này rồi thoát\n"
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr " -V, --version  đưa ra thông tin phiên bản rồi thoát\n"
+
+#: util-linux-compat.h:16
+#, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr ""
+"\n"
+"Để tìm thêm thông tin, xem %s.\n"
+"Thông báo lỗi dịch cho <http://translationproject.org/team/vi.html>\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: tùy chọn không cho phép “-- %c”\n"
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

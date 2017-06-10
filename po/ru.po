@@ -1,0 +1,197 @@
+# Translation of util-linux-2.13-pre7.po to Russian
+# Copyright (C) 2003 Free Software Foundation Inc.
+# This file is put in the public domain.
+#
+# Pavel Maryanov <acid_jack@ukr.net>, 2003, 2004, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux 2.13-pre7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2006-03-07 12:42+0200\n"
+"Last-Translator: Pavel Maryanov <acid_jack@ukr.net>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=KOI8-R\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: getopt.c:228
+#, fuzzy, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Попробуйте `getopt --help' для получения дополнительной информации.\n"
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "пустая опция long после аргумента -l или --long"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "неизвестный шелл после аргумента -s или --shell"
+
+#: getopt.c:325
+#, fuzzy, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr "       getopt [опции] -o|--options строка_опций [опции] [--]\n"
+
+#: getopt.c:331
+#, fuzzy
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr ""
+"  -a, --alternative            Разрешение длинных опций, начинающихся с "
+"одного -\n"
+
+#: getopt.c:332
+#, fuzzy
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr "  -l, --longoptions=longopts   Длинные опции для распознавания\n"
+
+#: getopt.c:333
+#, fuzzy
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr ""
+"  -n, --name=имя_программы     Имя, от которого ведется отчет об ошибках\n"
+
+#: getopt.c:334
+#, fuzzy
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr "  -o, --options=строка_опций   Короткие опции для распознавания\n"
+
+#: getopt.c:335
+#, fuzzy
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr ""
+"  -q, --quiet                  Отключение отчета об ошибках getopt(3)\n"
+
+#: getopt.c:336
+#, fuzzy
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr "  -Q, --quiet-output           Без обычных выходных данных\n"
+
+#: getopt.c:337
+#, fuzzy
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr ""
+"  -s, --shell=шелл             Установка условий закл. в кавычки для шелла\n"
+
+#: getopt.c:338
+#, fuzzy
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr "  -T, --test                   Проверка версии getopt(1)\n"
+
+#: getopt.c:339
+#, fuzzy
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr ""
+"  -u, --unqote                 Не заключать в кавычки выходные данные\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "отсутствует аргумент строки опций"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "внутренняя ошибка, свяжитесь с автором."
+
+#: util-linux-compat.h:11
+#, fuzzy
+msgid ""
+"\n"
+"Usage:\n"
+msgstr "Использование:\n"
+
+#: util-linux-compat.h:12
+#, fuzzy
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"%d разделы:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr ""
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr ""
+
+#: util-linux-compat.h:15
+#, fuzzy
+msgid " -V, --version  output version information and exit\n"
+msgstr "  -V, --version                Вывод информации о версии\n"
+
+#: util-linux-compat.h:16
+#, fuzzy, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr "Информация finger изменена.\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: неверная опция -- %c\n"
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

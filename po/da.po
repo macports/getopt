@@ -1,0 +1,249 @@
+# Danish translation util-linux.
+# Copyright (C) 2014 Free Software Foundation, Inc. og nedenstående oversættere.
+# This file is distributed under the same license as the util-linux package.
+# Claus Sørensen <cs@klid.dk>, 2000.
+# Keld Jørn Simonsen <keld@dkuug.dk>, 2000.
+# Claus Hindsgaul <claus_h@image.dk>, 2001-2002, 2004, 2005.
+# Joe Hansen <joedalton2@yahoo.dk>, 2010, 2011, 2012, 2013, 2014.
+#
+# adresse space -> adresserum (evt. adresseplads)
+# alloc -> allokere (tildele)
+# argument -> parameter
+# blank -> tom (men meget usikker her)
+# bogus -> bogus (kunne måske godt være vrøvle)
+# buffer -> mellemlager
+# capability -> evne (nogle bedre forslag?)
+# decompression -> dekomprimering
+# deprecated -> forældet
+# descriptor -> beskrivelse
+# directory -> mappe
+# divisor -> nævner
+# drift factor -> hastighedsfaktor
+# failed -> mislykkedes
+# flag -> flag
+# get -> indhente (alternativer: finde, få)
+# hibernation -> dvale
+# ID -> id
+# implies -> medfører
+# initramfs -> et initramfs (da et filsystem)
+# inode -> inode (en inode er noget som alle filer på ext3 og lignende 
+#                 filsystemer har. Det angiver vist et logisk sted på 
+#                 disken hvor den ligger) Flertal inoder
+# label -> etiket (mærke (bruges for tag), mærkat)
+# link -> henvisning (lænke)
+# loop -> loop (kunne også være løkke)
+# loopdev -> løkkeenhed (er en forkortelse for løkkeenhed)
+# max -> maks. (husk punktummet)
+# mapfile, map file -> afbildningsfil
+# parse -> fortolke
+# policy -> politik (retningslinje)
+# prober -> testprogram
+# save file -> redningsfil (kunne også være gemmefil)
+# semaphore -> semafor (signalmast)
+# set -> angiv
+# sleep -> dvale (måske problem se hibernation)
+# SGI volhdr -> SGI volhdr (var tidligere SGI bndhvd, kunne også være dskhdr)
+# stat -> stat (stat (Unix), a system call on POSIX and Unix-like systems)
+# tag -> mærke
+# uncompressing -> udpakker (se decompression)
+# UTC -> GMT 
+#       (UTC (også kaldet zulutid) er den internationale tidszone, som (næsten) 
+#        er det samme som Greenwich Mean Time. Tidsforskellen mellem dansk tid 
+#        og UTC er plus én time ved normaltid og plus to timer ved sommertid.
+#        Bruges ofte som synonymer. Dette til trods for, at UTC og GMT kan afvige
+#        få tiendedele af et sekund fra hinanden på grund af Jordens uregelmæssige
+#        rotationshastighed.
+# verbose output -> uddybende tilstand
+# volume -> diskenhed (bind, arkiv, diskområde)
+# wakeup -> opvågning
+# whole disk -> hele disken
+# "", '' -> »«
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux-2.24-rc2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2014-06-05 19:30+01:00\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Brug »%s --help« for yderligere detaljer.\n"
+
+# Jeg kiggede på hjælpeudskriften for programmet getopt, og det gav i
+# hvertfald mening på den måde.  Det er et program til at fortolke
+# kommandolinjeparametre, så derfor er det måske forvirrende af den
+# grund.  Man giver tilvalget --long til getopt, og det argument man
+# angiver til --long, fortolker den så som et langt tilvalg til det
+# program, hvis kommandolinje man bruger getopt til at fortolke.
+# Forvirret? :)
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "tomt langt ­tilvalg efter -l eller parameteren --long"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "ukendt skal efter -s eller parameteren --shell"
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+" %1$s optstring-parametre\n"
+" %1$s [tilvalg] [--] optstring-parametre\n"
+" %1$s [tilvalg] -o|--options optstring [tilvalg] [--] parametre\n"
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr " -a, --alternative            Tillad lange tilvalg med enkelt -\n"
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr " -l, --longoptions <langtilvalg> Lange tilvalg, der skal genkendes\n"
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr " -n, --name <prognavn>        Navnet som fejl skal rapporteres under\n"
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr " -o, --options <tilvalgsstreng> Korte tilvalg, der skal genkendes\n"
+
+#: getopt.c:335
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr ""
+" -q, --quiet                  Undertryk fejlrapportering fra getopt(3)\n"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr " -Q, --quiet-output           Ingen normale uddata\n"
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr " -s, --shell <skal>           Angiv konventioner for anførselstegn\n"
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr " -T, --test                   Tjek versionen af getopt(1)\n"
+
+#: getopt.c:339
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr " -u, --unquoted               Indskyd ikke anførselstegn i uddata\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "mangler tilvalgsstrengparameter"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "intern fejl, kontakt programmøren."
+
+#: util-linux-compat.h:11
+msgid ""
+"\n"
+"Usage:\n"
+msgstr ""
+"\n"
+"Brug:\n"
+
+#: util-linux-compat.h:12
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"Tilvalg:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr "\n"
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr " -h, --help     vis denne hjælpetekst og afslut\n"
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr " -V, --version  vis versionsinformation og afslut\n"
+
+#: util-linux-compat.h:16
+#, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr ""
+"\n"
+"For yderligere detaljer se %s.\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

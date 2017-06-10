@@ -1,0 +1,186 @@
+# Estonian translations for util-linux
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# Copyright (C) 2002 Meelis Roos <mroos@linux.ee>
+# Meelis Roos <mroos@linux.ee>, 2002
+#
+# Permission is granted to freely copy and distribute
+# this file and modified versions, provided that this
+# header is not removed and modified versions are marked
+# as such.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux 2.11r\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2002-05-19 20:04GMT+0300\n"
+"Last-Translator: Meelis Roos <mroos@linux.ee>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr ""
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr ""
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr ""
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr ""
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr ""
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr ""
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr ""
+
+#: getopt.c:335
+#, fuzzy
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr "                s - Sektorite järgi järjestatud tabel"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr ""
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr ""
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr ""
+
+#: getopt.c:339
+#, fuzzy
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr "                s - Sektorite järgi järjestatud tabel"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr ""
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr ""
+
+#: util-linux-compat.h:11
+#, fuzzy
+msgid ""
+"\n"
+"Usage:\n"
+msgstr "kasutamine:\n"
+
+#: util-linux-compat.h:12
+#, fuzzy
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"%d partitsiooni:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr ""
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr ""
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr ""
+
+#: util-linux-compat.h:16
+#, fuzzy, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr "Kasutaja informatsioon on muudetud\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

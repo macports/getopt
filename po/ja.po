@@ -1,0 +1,202 @@
+# Japanese messages for util-linux
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# This file is distributed under the same license as the util-linux package.
+# includes cfdisk original translation by
+# Hidenobu NABETANI <nabetani@kern.phys.sci.osaka-u.ac.jp>
+# Daisuke Yamashita <yamad@mb.infoweb.ne.jp>, 1999-2001.
+# Makoto Kato <makoto.kt@gmail.com>, 2009-2010.
+# Once util-linux-ng was forked from util-linux,
+# as of January 2011 it has overrided original name util-linux.
+# Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2011, 2013.
+#   Work in 2013 is by courtesy of Yasuhiko Kamata <belphegor@belbel.or.jp>.
+# victory <victory.deb@gmail.com>, 2013.
+# Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux 2.24-rc2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2014-05-15 16:57+0900\n"
+"Last-Translator: Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "詳しくは `%s --help' をお読みください。\n"
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "-l や --long 引数の後にロングオプションが指定されていません"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "-s か --shell 引数の後に書かれたシェルは、不明なものです"
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+" %1$s 解析対象文字列 パラメータ\n"
+" %1$s [オプション] [--] 解析対象文字列 パラメータ\n"
+" %1$s [オプション] -o|--options 解析対象文字列 [オプション] [--] パラメータ\n"
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr ""
+" -a, --alternative            単一の - で始まるロングオプションを許可するよう"
+"にします\n"
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr ""
+" -l, --longoptions <解析対象文字列> 認識すべきロングオプションを指定します\n"
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr ""
+" -n, --name <プログラム名>    エラーが報告された場合に使用する名前を指定しま"
+"す\n"
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr ""
+" -o, --options <解析対象文字列> 認識すべきショートオプションを指定します\n"
+
+#: getopt.c:335
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr ""
+" -q, --quiet                  getopt(3) によるエラー報告を無効化します\n"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr " -Q, --quiet-output           通常の出力を省略します\n"
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr ""
+" -s, --shell <shell>          指定したシェル用のエスケープ処理を行います\n"
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr " -T, --test                   getopt(1) のバージョンを確認します\n"
+
+#: getopt.c:339
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr " -u, --unquoted               出力を括らないようにします\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "解析対象の文字列が指定されていません"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "内部エラーです。作者にご連絡ください。"
+
+#: util-linux-compat.h:11
+msgid ""
+"\n"
+"Usage:\n"
+msgstr ""
+"\n"
+"使い方:\n"
+
+#: util-linux-compat.h:12
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"オプション:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr "\n"
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr " -h, --help     このヘルプを表示して終了します\n"
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr " -V, --version  バージョン情報を表示して終了します\n"
+
+#: util-linux-compat.h:16
+#, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr ""
+"\n"
+"詳しくは %s をお読みください。\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

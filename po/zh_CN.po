@@ -1,0 +1,192 @@
+# Chinese simplified translation of util-linux.
+# Copyright (C) 2008-2012, util-linux's authors.
+# This file is distributed under the same license as the util-linux package.
+# Permission is granted to freely copy and distribute
+# this file and modified versions, provided that this
+# header is not removed and modified versions are marked
+# as such.
+#
+# Ray Wang <wanglei1123@gmail.com>, 2008.
+# Wylmer Wang <wantinghard@gmail.com>, 2012, 2013, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux-2.24-rc2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2014-05-01 10:47+0800\n"
+"Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "请尝试执行“%s --help”了解更多信息。\n"
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "-l 或 --long 参数后的长选项为空"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "-s 或 --shell 参数后是未知的 shell"
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+" %1$s 选项字符串 参数\n"
+" %1$s [options] [--] 选项字符串 参数\n"
+" %1$s [options] -o|--options 选项字符串 [选项] [--] 参数\n"
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr " -a, --alternative            允许长选项以 - 开始\n"
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr " -l, --longoptions <长选项>  要识别的长选项\n"
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr " -n, --name <程序名>         将错误报告给的程序名\n"
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr " -o, --options <选项字符串>  要识别的短选项\n"
+
+#: getopt.c:335
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr " -q, --quiet                  禁止 getopt(3) 的错误报告\n"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr " -Q, --quiet-output           无正常输出\n"
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr " -s, --shell <shell>          设置 shell 引用规则\n"
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr " -T, --test                   测试 getopt(1) 版本\n"
+
+#: getopt.c:339
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr " -u, --unquoted               不引用输出\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "缺少 optstring 参数"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "内部错误，请联系作者。"
+
+#: util-linux-compat.h:11
+msgid ""
+"\n"
+"Usage:\n"
+msgstr ""
+"\n"
+"用法：\n"
+
+#: util-linux-compat.h:12
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"选项：\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr "\n"
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr " -h, --help     显示此帮助并退出\n"
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr " -V, --version  输出版本信息并退出\n"
+
+#: util-linux-compat.h:16
+#, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr ""
+"\n"
+"更多信息请参阅 %s。\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""

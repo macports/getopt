@@ -1,0 +1,4 @@
+$0: invalid option -- 'c'
+$0: unrecognized option '--unknown'
+$0: option '--long' is ambiguous
+$0: option requires an argument -- 'b'

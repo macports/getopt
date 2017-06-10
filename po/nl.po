@@ -1,0 +1,209 @@
+# Dutch translations for the 'util-linux' Linux Utilities.
+# This file is distributed under the same license as the util-linux package.
+#
+# Permission is granted to freely copy and distribute this file
+# and modified versions, provided that this header is not removed
+# and modified versions are marked as such.
+#
+#  ╒════════════════════════╕
+#  │ ¿Qué corchos será eso? │
+#  ╘════════════════════════╛
+#
+# Woordgebruik:
+# block    -> blok
+# sector   -> sector
+# cylinder -> cilinder
+# volume   -> volumen
+# (inode blijft onvertaald)
+#
+# Berichtvertalingen die met ### beginnen zijn in feite debug-meldingen
+# en de bijbehorende msgids zouden niet in dit bestand moeten voorkomen.
+#
+# Taco Witte <tcwitte@cs.uu.nl>, 2002, 2003.
+# Luk Claes <luk.claes@ugent.be>, 2005.
+# Benno Schulenberg <benno@vertaalt.nl>, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: util-linux-2.25-rc3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-22 13:14+0100\n"
+"PO-Revision-Date: 2014-07-06 12:29+0200\n"
+"Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: getopt.c:228
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Typ '%s --help' voor meer informatie.\n"
+
+#: getopt.c:297
+msgid "empty long option after -l or --long argument"
+msgstr "lege optiereeks na optie '-l' of '--long'"
+
+#: getopt.c:318
+msgid "unknown shell after -s or --shell argument"
+msgstr "onbekende shell na optie '-s' of '--shell'"
+
+#: getopt.c:325
+#, c-format
+msgid ""
+" %1$s optstring parameters\n"
+" %1$s [options] [--] optstring parameters\n"
+" %1$s [options] -o|--options optstring [options] [--] parameters\n"
+msgstr ""
+"  %1$s <optiereeks> <parameters>\n"
+"  %1$s [opties] [--] <optiereeks> <parameters>\n"
+"  %1$s [opties] -o|--options <optiereeks> [opties] [--] <parameters>\n"
+
+#: getopt.c:331
+msgid ""
+" -a, --alternative            Allow long options starting with single -\n"
+msgstr "  -a, --alternative             lange opties met één '-' toestaan\n"
+
+#: getopt.c:332
+msgid " -l, --longoptions <longopts> Long options to be recognized\n"
+msgstr "  -l, --longoptions=<optiereeks>  te herkennen lange opties\n"
+
+#: getopt.c:333
+msgid ""
+" -n, --name <progname>        The name under which errors are reported\n"
+msgstr "  -n, --name=<programmanaam>    fouten rapporteren onder deze naam\n"
+
+#: getopt.c:334
+msgid " -o, --options <optstring>    Short options to be recognized\n"
+msgstr "  -o, --options=<optiereeks>    te herkennen korte opties\n"
+
+#: getopt.c:335
+msgid " -q, --quiet                  Disable error reporting by getopt(3)\n"
+msgstr ""
+"  -q, --quiet                   foutrapportage van getopt(3) uitzetten\n"
+
+#: getopt.c:336
+msgid " -Q, --quiet-output           No normal output\n"
+msgstr "  -Q, --quiet-output            gewone uitvoer onderdrukken\n"
+
+#: getopt.c:337
+msgid " -s, --shell <shell>          Set shell quoting conventions\n"
+msgstr ""
+"  -s, --shell=<shell>           aanhalingsconventies van deze shell "
+"gebruiken\n"
+
+#: getopt.c:338
+msgid " -T, --test                   Test for getopt(1) version\n"
+msgstr ""
+"  -T, --test                    bepalen of dit een verbeterde getopt(1) is\n"
+
+#: getopt.c:339
+msgid " -u, --unquoted               Do not quote the output\n"
+msgstr "  -u, --unquoted                de uitvoer niet aanhalen\n"
+
+#: getopt.c:390 getopt.c:449
+msgid "missing optstring argument"
+msgstr "ontbrekende optiereeks"
+
+#: getopt.c:444
+msgid "internal error, contact the author."
+msgstr "**interne programmafout**; neem contact op met de auteur"
+
+#: util-linux-compat.h:11
+msgid ""
+"\n"
+"Usage:\n"
+msgstr ""
+"\n"
+"Gebruik:\n"
+
+#: util-linux-compat.h:12
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"Opties:\n"
+
+#: util-linux-compat.h:13
+msgid "\n"
+msgstr "\n"
+
+#: util-linux-compat.h:14
+msgid " -h, --help     display this help and exit\n"
+msgstr "  -h, --help        deze hulptekst tonen en stoppen\n"
+
+#: util-linux-compat.h:15
+msgid " -V, --version  output version information and exit\n"
+msgstr "  -V, --version     programmaversie tonen en stoppen\n"
+
+#: util-linux-compat.h:16
+#, c-format
+msgid ""
+"\n"
+"For more details see %s.\n"
+msgstr ""
+"\n"
+"Voor meer informatie zie %s.\n"
+
+#: util-linux-compat.h:18
+#, c-format
+msgid "%s (enhanced) %s\n"
+msgstr ""
+
+#: gnu/getopt.c:678
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:702
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:707
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:724 gnu/getopt.c:897
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr ""
+
+#: gnu/getopt.c:753
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:757
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr ""
+
+#: gnu/getopt.c:783
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: ongeldige optie -- %c\n"
+
+#: gnu/getopt.c:786
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:816 gnu/getopt.c:946
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr ""
+
+#: gnu/getopt.c:863
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr ""
+
+#: gnu/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr ""
