@@ -32,7 +32,7 @@ MSGFMT=msgfmt
 LANGUAGES = ca cs da de es et eu fi fr gl hr hu id it ja nl pl pt_BR ru sl sv tr uk vi zh_CN zh_TW
 MOFILES:=$(patsubst %,po/%.mo,$(LANGUAGES))
 
-CPPFLAGS=-DLIBCGETOPT=$(LIBCGETOPT) -DWITHOUT_GETTEXT=$(WITHOUT_GETTEXT) -DLOCALEDIR=\"$(localedir)\" -DNOT_UTIL_LINUX -Dprogram_invocation_short_name=\"$(PACKAGE)\"  -Dprogram_version=\"$(VERSION)\"
+CPPFLAGS=-DLIBCGETOPT=$(LIBCGETOPT) -DWITHOUT_GETTEXT=$(WITHOUT_GETTEXT) -DLOCALEDIR=\"$(localedir)\" -DNOT_UTIL_LINUX -Dprogram_invocation_short_name=\"$(PACKAGE)\"  -Dprogram_version=\"$(VERSION)\" -I$(prefix)/include
 ifeq ($(LIBCGETOPT),0)
 CPPFLAGS+=-I./gnu 
 endif
@@ -43,7 +43,7 @@ WARNINGS=-Wall \
          -Wnested-externs -Winline
 OPTIMIZE=-O3 -fno-strength-reduce
 CFLAGS=$(WARNINGS) $(OPTIMIZE)
-LDFLAGS=
+LDFLAGS=-L$(prefix)/lib -lintl
 
 sources=getopt.c
 ifeq ($(LIBCGETOPT),0)

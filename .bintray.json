@@ -1,0 +1,27 @@
+{
+    "package": {
+        "name": "auto-upload",
+        "repo": "getopt",
+        "subject": "macports-ci-bot",
+        "desc": "getopt binaries for MacPorts pull request CI bot",
+        "website_url": "https://www.macports.org/",
+        "vcs_url": "https://github.com/macports/getopt",
+        "licenses": ["GPL-2.0", "GPL-3.0"],
+        "public_download_numbers": false,
+        "public_stats": false
+    },
+
+    "version": {
+        "name": "1.1.6",
+        "desc": "",
+        "released": "2017-06-20",
+        "vcs_tag": "v1.1.6",
+        "gpgSign": false
+    },
+
+    "files":
+        [
+        {"includePattern": "getopt-TRAVIS_TAG.tar.bz2", "uploadPattern": "getopt-TRAVIS_TAG.tar.bz2"}
+        ],
+    "publish": true
+}

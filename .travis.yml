@@ -1,0 +1,22 @@
+language: c
+os: osx
+osx_image: xcode8.3
+before_install:
+- export PATH="$PATH:/opt/mports/bin"
+- tar -xf gettext/gettext-0.19.8.1.tar.gz
+- cd gettext-0.19.8.1 && ./configure --prefix=/opt/mports --disable-csharp --disable-native-java
+  --disable-openmp --without-emacs && sudo make install && cd ..
+script:
+- sudo make CC=/usr/bin/clang LIBCGETOPT=0 prefix=/opt/mports install
+before_deploy:
+- tar -cjf getopt-$TRAVIS_TAG.tar.bz2 /opt/mports/bin/getopt /opt/mports/lib/libintl.8.dylib
+- sed -i '' "s/TRAVIS_TAG/$TRAVIS_TAG/g" .bintray.json
+deploy:
+  provider: bintray
+  file: ".bintray.json"
+  user: l2dybot
+  skip_cleanup: true
+  on:
+    tags: true
+  key:
+    secure: z4MCO4JmiqgzGO6DUsMZu10Lc5kWFEepyKbHe9N2kYLSmd5fg0qOGkZVTMLzxwOZsr/SIySoQe8It7cAzA9ubIVuOtCxH6zmMc63fia18Tw+tPBi+9IYjisWXMGY2a6h/RZ3f/CKvTlt1aohZBUeyCBuTg4g/04JZ2EOXWrKyZizIUubKa+i+6BdbG62LFYeNV3weDIHBON+c8FtPoTIpkUo/uhQqA+ewkk8kRKsH5PMeb+mup4xKVowsTZ34G/XLoeIGybAkOJ1WPVh+n8yzaHHlNtIUoptM2vmGFsbF72tR8AJm0vud8zSHCHr12imHGQMENwBorZF4eukysaCmO547clrzyPZmAk+MOnfJ4zkqo/SNMdjbIvyNInqKWyNOpZEbiC8EIdxfkcBebdwnd7zRDDr1SUhiFDc2jcpmO0KyP0Yzqf45I/bViQ8PHdn8uLlTP4+b+xKAB94F1agYhrpPzKWJXrQXUWeTnpS3o9OrpJs2tpFVGF3HFtseXdDq1xopEU/4ZYXzsgF5ISY2FSWBNXPVubH6mNcYfTIeBPH1IXf7XQg8SvOS6cerde2TpIS01TH1Z1tW4BI4uP3VltU999+ofU0T8PKlbTXO+BHDO++z1gC9NkdokYW8GWeGdBaHatsgiW71sDo+OuqDkgmhpS5M7S/lecwM0Y6BaE=
